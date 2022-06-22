@@ -1,0 +1,80 @@
+Bugtracker SRS
+
+		Functional Requirements - End Users must be able to perform the following actions
+
+	Description				|	Purpose
+
+1. 	Register as a user/Login			|	Secure System Access
+2.	Assign/Unassign Users to/from roles		| 	Role-Based Security
+3.	Create Projects				|	Organisation of resources / Project managers or admin only
+4.	Assign/unassign users to/from projects		|	Organisation of resources / Project managers or admin only
+5. 	Create tickets				|	Log software issue instance
+6.	Assign tickets to user				|	Enforce accountability for a ticket item for a developer
+7.	Create ticket comments			|	Add progress comments and other info to ticket history
+8.	Create ticket attachments			|	Add helpful visuals and other documentation to the ticket history
+9.	List comments, attachements per ticket		|	Organisation of resources
+10.	List history of a ticket's changes			|	Important continuity and organisation of resources for developer
+11.	List tickets by owner				|	Provide easy tracking of tickets logged by a particular user
+12.	List tickets by assignment 			|	Provide easy tracking of tickets assigned to a particular developer
+13.	List ticket by project				|	Organisation of resources - easy access to tickets per software project
+14. 	Filter ticket lists by ticket type, priority, and status	|	Ease of use and access
+15.	Filter ticket lists by creation/filtered date/time	|	Ease of use and access
+16.	Sort ticket list by title, owner, assignment, creation	|	Ease of use and access
+	or recent update date/time, ticket type, priority,	|
+	status, and project				|
+17.	Full text search of all relevant fields		|	Ease of use and access				
+
+
+		User Interface Requirements - To facilitate intuitive and user-friendly interaction
+
+	Description		|	Features List
+
+1.	Landing			|	- All users to this page when accessing the site
+				|	- Links to Login and Register, include button to Login as guest or Demo (w/Admin rights to the site 
+				|	for demonstration purposes)
+
+2.	Login/Register		|	- From this page users can login, register as a new user, and recover a lost password
+				|	- Optional: Include Social networks as a registration/login method
+
+3. 	Dashboard		|	- Users are directed here on successful login
+				|	- Display the most recent ticket assignments or tickets logged for the user (depends on role) or other
+				|	 relevant role-based information
+				|	- Optional: Display data visualisation of ticket types logged and resolved per project
+
+4. 	Role Management		|	- Admin users must have access to an interface for assigning users to and removing users from the 
+				|	following roles (roles should be seeded in database along with global admin user):
+				|		- Administrator -> Project Manager -> Developer -> Submitter
+
+5.	Ticket Management		|	- Paged listing of ticket items (default 10 tickets per page, may be changed by user)
+				|	- Users have access to ticket lists based on role:
+				|		- Submitters see tickets which they own
+				|		- Developers see tickets to which they are assigned
+				|		- Project managers see tickets belonging to the projects for which they are responsible
+				|		- Administrators see all tickets
+				|	- Tickets may be created and edited, not deleted. Completed tickets receive a "Resolved" status
+				|	- A ticket details page must be used to provide full detailed ticket history for each ticket
+				|	- Ticket statuses, types, and priorities should be seeded in database
+				|	- Provide interfaces for adding comments and attachments 
+				|	- Developers should be notified via email or other messaging service when assigned a new ticket
+
+6.	Project Management		|	- Project managers and administrators must have access to an interface for creating projects
+				|	- Project managers and administrators must have access to an interface for assigning users to and 
+				|	and removing users from a project
+
+7.	User Profile		|	- Change password 
+				|	- Edit profile information (name, email, etc)
+				|	- Associate profile with social network identities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
