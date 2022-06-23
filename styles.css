@@ -2,24 +2,24 @@
 
 /* General */
 
-* { 
-    background-color:#cee8f2;
+* {
+    background: #f7f0e6;
     font-family: 'Barlow Condensed', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-size: 20px;
     font-weight: 500;
 }
 
-.row{
+.row {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -28,48 +28,69 @@ body{
 
 /* Sign In Form */
 
-.HeaderTitle, .signInForm{
+.HeaderTitle {
     display: flex;
     justify-content: center;
+    margin: auto 0;
 }
 
-.formGroup--Container{
+.formGroup--Container {
     max-width: 400px;
     margin: 0 auto;
 }
 
-.formControl{
+.formControl {
     width: 100%;
+    padding: 3px;
+    text-indent: 5px;
 }
 
-.formGroup label{
+::placeholder {
+    font-style: italic;
+}
+
+.formGroup label {
     display: block;
-    padding: 10px 2px ;
+    padding-top: 20px;
 }
 
-.buttonPrimary{
+.checkbox {
+    padding-bottom: 10px;
+}
+
+.buttonPrimary {
     width: 35%;
     padding: 8px 10px;
     border-radius: 25px;
     padding-bottom: 10px;
+    background-color: #e99550;
+    border: none;
+    font-size: large;
+    font-weight: 600;
 }
 
-.buttonPrimary, .checkbox{
+.buttonPrimary:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.buttonPrimary,
+.checkbox {
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
 
-.formGroupBottom{
+.formGroupBottom {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.buttonPrimaryOutline{
+.buttonPrimaryOutline {
     padding: 10px;
     color: black;
 }
 
-.buttonPrimaryOutline:hover{
+.buttonPrimaryOutline:hover {
     text-decoration: underline;
 }
