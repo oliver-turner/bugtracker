@@ -8,8 +8,15 @@
 }
 
 body{
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
+}
+
+.row{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 12px;
 }
 
 .HeaderTitle, .signInForm{
@@ -17,10 +24,32 @@ body{
     justify-content: center;
 }
 
-.formGroupWrapper{
-    padding: 10px;
+.formGroup--Container{
+    max-width: 400px;
+    margin: 0 auto;
+    
 }
 
-.formGroup{
-    
+.formControl{
+    width: 100%;
+}
+
+.formGroup label{
+    display: block;
+    padding: 10px 2px ;
+}
+
+.buttonPrimary{
+    padding: 8px 10px;
+    border-radius: 25px;
+}
+
+.buttonPrimary, .checkbox{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.checkbox label{
+    margin-left: 10px;
 }
