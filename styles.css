@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
 
-* {
+/* General */
+
+* { 
+    background-color:#cee8f2;
     font-family: 'Barlow Condensed', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 body{
@@ -19,6 +26,8 @@ body{
     padding: 0 12px;
 }
 
+/* Sign In Form */
+
 .HeaderTitle, .signInForm{
     display: flex;
     justify-content: center;
@@ -27,7 +36,6 @@ body{
 .formGroup--Container{
     max-width: 400px;
     margin: 0 auto;
-    
 }
 
 .formControl{
@@ -40,8 +48,10 @@ body{
 }
 
 .buttonPrimary{
+    width: 35%;
     padding: 8px 10px;
     border-radius: 25px;
+    padding-bottom: 10px;
 }
 
 .buttonPrimary, .checkbox{
@@ -50,6 +60,16 @@ body{
     margin: 0 auto;
 }
 
-.checkbox label{
-    margin-left: 10px;
+.formGroupBottom{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonPrimaryOutline{
+    padding: 10px;
+    color: black;
+}
+
+.buttonPrimaryOutline:hover{
+    text-decoration: underline;
 }
