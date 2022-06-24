@@ -14,9 +14,18 @@ a {
     text-decoration: none;
 }
 
+h2{
+    font-size: 25px;
+}
+
 body {
     font-size: 20px;
     font-weight: 500;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 100;
 }
 
 .row {
@@ -26,6 +35,29 @@ body {
     padding: 0 12px;
 }
 
+/* Landing Page */
+
+.landingPage--container {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.landingPage--sloganContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.landingPage--slogan{
+    padding: 10px;
+}
+
+.beige {
+    color: #e99550;
+}
+
+
 /* Sign In Form */
 
 .HeaderTitle {
@@ -34,7 +66,7 @@ body {
     align-items: center;
 }
 
-.formGroup--Container {
+.formGroup--container {
     max-width: 600px;
     height: 100vh;
     margin: 0 auto;
@@ -50,7 +82,7 @@ body {
     text-indent: 5px;
     border: 1px solid;
     border-radius: 50px;
-    box-shadow: -15px 10px 20px -10px rgba(0,0,0,0.7);
+    box-shadow: -15px 10px 20px -10px rgba(0, 0, 0, 0.7);
 }
 
 ::placeholder {
@@ -79,7 +111,7 @@ body {
     background-color: #e99550;
     border: none;
     font-size: large;
-    box-shadow: -15px 10px 20px -10px rgba(0,0,0,0.7);
+    box-shadow: -15px 10px 20px -10px rgba(0, 0, 0, 0.7);
 }
 
 .buttonPrimary:hover {
