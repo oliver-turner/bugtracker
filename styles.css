@@ -44,25 +44,34 @@ body {
 }
 
 .formControl {
+    position: relative;
     width: 100%;
-    padding: 3px;
+    padding: 10px;
     text-indent: 5px;
+    border: 1px solid;
+    border-radius: 50px;
+    box-shadow: -15px 10px 20px -10px rgba(0,0,0,0.7);
 }
 
 ::placeholder {
     font-style: italic;
+    font-size: 15px;
 }
 
 .formGroup label {
     display: block;
     padding-top: 10px;
+    text-indent: 1em;
 }
 
-.checkbox {
+.checkbox label {
+    font-size: smaller;
+    text-indent: 0em;
     padding-bottom: 10px;
 }
 
 .buttonPrimary {
+    position: relative;
     width: 35%;
     padding: 8px 10px;
     border-radius: 25px;
@@ -70,7 +79,7 @@ body {
     background-color: #e99550;
     border: none;
     font-size: large;
-    font-weight: 600;
+    box-shadow: -15px 10px 20px -10px rgba(0,0,0,0.7);
 }
 
 .buttonPrimary:hover {
