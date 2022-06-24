@@ -21,7 +21,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -30,13 +30,17 @@ body {
 
 .HeaderTitle {
     display: flex;
-    justify-content: center;
-    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formGroup--Container {
-    max-width: 400px;
+    max-width: 600px;
+    height: 100vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .formControl {
@@ -51,7 +55,7 @@ body {
 
 .formGroup label {
     display: block;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .checkbox {
