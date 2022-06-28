@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 /* General */
 
@@ -14,17 +14,9 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a { 
     text-decoration: none;
-}
-
-h2 {
-    font-size: 25px;
-}
-
-body {
-    font-size: 20px;
-    font-weight: 500;
+    background-color: transparent;
 }
 
 p {
@@ -34,6 +26,7 @@ p {
 
 li{
     list-style-type: none;
+    background-color: transparent;
 }
 
 ul {
@@ -44,6 +37,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    background-color: transparent;
 }
 
 .row {
@@ -78,7 +72,7 @@ ul {
 }
 
 .landingPage--slogan {
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
 
 .beige {
@@ -108,7 +102,7 @@ ul {
     height: 6px;
     border-radius: 2px;
     background-color: black;
-    animation: scroll 1250ms infinite alternate-reverse;
+    animation: scroll 800ms infinite alternate-reverse;
 }
 
 @keyframes scroll{
@@ -173,12 +167,16 @@ ul {
     background-color: #e99550;
     border: none;
     font-size: large;
-    box-shadow: -15px 10px 20px -10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 5px 0px 0px rgba(119, 62, 0, 0.7);
 }
 
 .buttonPrimary:hover {
     cursor: pointer;
-    opacity: 75%;
+}
+
+.buttonPrimary:active{
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
 .buttonPrimary,
@@ -205,7 +203,7 @@ ul {
 /* Forgot Password */
 
 nav{
-    height: 100px;
+    height: 50px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -213,6 +211,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 12px;
+    background: linear-gradient(to bottom, #eed7b4,#cc8c58);
+    border-bottom: 2px solid #eed7b4;
 }
 
 .bugtrackerLogo {
@@ -226,4 +226,9 @@ nav{
 .nav--linkAnchor {
     margin: 0 12px;
     color: black;
+    transition: color ease-in-out .25s;
+}
+
+.nav--linkList a:hover{
+    color: white;
 }
