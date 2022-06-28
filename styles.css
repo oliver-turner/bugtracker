@@ -32,6 +32,20 @@ p {
     font-weight: 100;
 }
 
+li{
+    list-style-type: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 .row {
     width: 100%;
     max-width: 400px;
@@ -60,6 +74,7 @@ p {
     display: flex;
     flex-direction: row;
     text-align: center;
+    margin: 0 30px 75px 30px;
 }
 
 .landingPage--slogan {
@@ -185,4 +200,30 @@ p {
 
 .buttonPrimaryOutline:hover {
     text-decoration: underline;
+}
+
+/* Forgot Password */
+
+nav{
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.bugtrackerLogo {
+    color: black;
+}
+
+.nav--linkList{
+    display: flex;
+}
+
+.nav--linkAnchor {
+    margin: 0 12px;
+    color: black;
 }
