@@ -243,6 +243,9 @@ nav{
     margin: 0 25px
 }
 
+.emailForm--label{
+    padding-bottom: 10px;
+}
 
 .emailForm--box{
     width: 50%;
