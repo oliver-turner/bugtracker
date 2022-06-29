@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;700&display=swap');
 
 /* General */
 
 * {
     background: #f7f0e6;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,8 +19,12 @@ a {
     background-color: transparent;
 }
 
+h2{
+    margin: 10px 0;
+}
+
 p {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 100;
 }
 
@@ -136,8 +140,8 @@ ul {
     width: 100%;
     padding: 10px;
     text-indent: 5px;
-    border: 1px solid;
-    border-radius: 50px;
+    border: 1.5px solid;
+    border-radius: 10px;
     box-shadow: -15px 10px 20px -10px rgba(0, 0, 0, 0.7);
 }
 
@@ -149,12 +153,10 @@ ul {
 .formGroup label {
     display: block;
     padding-top: 10px;
-    text-indent: 1em;
 }
 
 .checkbox label {
     font-size: smaller;
-    text-indent: 0em;
     padding-bottom: 10px;
 }
 
@@ -162,7 +164,7 @@ ul {
     position: relative;
     width: 35%;
     padding: 8px 10px;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-bottom: 10px;
     background-color: #e99550;
     border: none;
@@ -187,6 +189,7 @@ ul {
 }
 
 .formGroupBottom {
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -200,7 +203,7 @@ ul {
     text-decoration: underline;
 }
 
-/* Forgot Password */
+/* Forgot Password - navigation */
 
 nav{
     height: 50px;
@@ -210,17 +213,18 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
     background: linear-gradient(to bottom, #eed7b4,#cc8c58);
     border-bottom: 2px solid #eed7b4;
 }
 
 .bugtrackerLogo {
     color: black;
+    margin-left: 25px;
 }
 
 .nav--linkList{
     display: flex;
+    margin-right: 20px;
 }
 
 .nav--linkAnchor {
@@ -231,4 +235,24 @@ nav{
 
 .nav--linkList a:hover{
     color: white;
+}
+
+/* Forgot Password - form */
+
+.forgotPassword--container{
+    margin: 0 25px
+}
+
+
+.emailForm--box{
+    width: 50%;
+}
+
+.sendEmail--button{
+    padding: 25px 0;
+}
+
+#emailLink--button{
+   width: 100px;
+   margin: 0;
 }
